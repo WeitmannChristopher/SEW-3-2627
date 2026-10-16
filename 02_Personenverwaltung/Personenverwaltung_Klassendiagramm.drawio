@@ -4,6 +4,94 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="wDfXyIiWzjIOUf_YAaer-14" value="Person" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="280" width="270" height="318" as="geometry" />
+        </mxCell>
+        <mxCell id="wDfXyIiWzjIOUf_YAaer-18" value="+ Id: int &amp;lt;&amp;lt;property&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wDfXyIiWzjIOUf_YAaer-14" vertex="1">
+          <mxGeometry y="26" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wDfXyIiWzjIOUf_YAaer-23" value="+ Hauptwohnsitz: Adresse &amp;lt;&amp;lt;property&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wDfXyIiWzjIOUf_YAaer-14" vertex="1">
+          <mxGeometry y="52" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wDfXyIiWzjIOUf_YAaer-22" value="+ Geburtsdatum: DateTime &amp;lt;&amp;lt;property&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wDfXyIiWzjIOUf_YAaer-14" vertex="1">
+          <mxGeometry y="78" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wDfXyIiWzjIOUf_YAaer-21" value="+ EMail: string &amp;lt;&amp;lt;property&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wDfXyIiWzjIOUf_YAaer-14" vertex="1">
+          <mxGeometry y="104" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wDfXyIiWzjIOUf_YAaer-20" value="+ Nachname: string &amp;lt;&amp;lt;property&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wDfXyIiWzjIOUf_YAaer-14" vertex="1">
+          <mxGeometry y="130" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wDfXyIiWzjIOUf_YAaer-19" value="+ Vorname: string &amp;lt;&amp;lt;property&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wDfXyIiWzjIOUf_YAaer-14" vertex="1">
+          <mxGeometry y="156" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wDfXyIiWzjIOUf_YAaer-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="wDfXyIiWzjIOUf_YAaer-14" vertex="1">
+          <mxGeometry y="182" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="wDfXyIiWzjIOUf_YAaer-24" value="+ &amp;lt;&amp;lt;create&amp;gt;&amp;gt; Person(id: int, vorname: string, nachname: string, eMail: string, geburtsdatum: DateTime, hauptwohnsitz: Adresse)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wDfXyIiWzjIOUf_YAaer-14" vertex="1">
+          <mxGeometry y="190" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wDfXyIiWzjIOUf_YAaer-17" value="+ BerechneAlter(): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wDfXyIiWzjIOUf_YAaer-14" vertex="1">
+          <mxGeometry y="240" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-14" value="+ VollerName(): string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="wDfXyIiWzjIOUf_YAaer-14">
+          <mxGeometry y="266" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="wDfXyIiWzjIOUf_YAaer-25" value="+ ToString(): string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="wDfXyIiWzjIOUf_YAaer-14" vertex="1">
+          <mxGeometry y="292" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-1" value="Adresse" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="280" width="230" height="286" as="geometry" />
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-2" value="+ Strasse: string &amp;lt;&amp;lt;property&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="8PODOHPEmt9L8uYbO1VI-1">
+          <mxGeometry y="26" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-7" value="+ Hausnummer: string &amp;lt;&amp;lt;property&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="8PODOHPEmt9L8uYbO1VI-1">
+          <mxGeometry y="52" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-6" value="+ Plz: int &amp;lt;&amp;lt;property&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="8PODOHPEmt9L8uYbO1VI-1">
+          <mxGeometry y="78" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-8" value="+ Ort: string &amp;lt;&amp;lt;property&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="8PODOHPEmt9L8uYbO1VI-1">
+          <mxGeometry y="104" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-9" value="+ Bundesland: string &amp;lt;&amp;lt;property&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="8PODOHPEmt9L8uYbO1VI-1">
+          <mxGeometry y="130" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-12" value="+ Land: string &amp;lt;&amp;lt;property&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="8PODOHPEmt9L8uYbO1VI-1">
+          <mxGeometry y="156" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="8PODOHPEmt9L8uYbO1VI-1">
+          <mxGeometry y="182" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-4" value="+ &lt;code&gt;&amp;lt;&amp;lt;create&amp;gt;&amp;gt;&lt;/code&gt; Adresse(strasse: string, hausnummer: string, plz: int, ort: string, bundesland: string, land: string = &quot;Österreich&quot;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="8PODOHPEmt9L8uYbO1VI-1">
+          <mxGeometry y="190" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-13" value="+ ToString(): string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="8PODOHPEmt9L8uYbO1VI-1">
+          <mxGeometry y="260" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;endSize=15;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="wDfXyIiWzjIOUf_YAaer-20" target="8PODOHPEmt9L8uYbO1VI-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="410" as="sourcePoint" />
+            <mxPoint x="470" y="410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="480" y="423" />
+              <mxPoint x="480" y="423" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-17" value="0..*" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="400" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-18" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-19" value="Hauptwohnsitz" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="424" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8PODOHPEmt9L8uYbO1VI-20" value="&lt;div&gt;&lt;b&gt;&lt;u&gt;Notiz als Begründung für &quot;Wohnhauptsitz&quot;:&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;Die Person kennt ihren Hauptwohnsitz, deshalb zeigt der Pfeil von Person zu Adresse. Jede Person hat genau eine Adresse, aber an einer Adresse können mehrere Personen wohnen." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="660" width="320" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
