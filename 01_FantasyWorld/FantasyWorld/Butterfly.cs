@@ -25,12 +25,12 @@ namespace FantasyWorld
                 case 2: dx = -2; dy = 2; break;
                 case 3: dx = 2; dy = 2; break;
             }
-            X += dx;
-            Y += dy;
-            if (X >= World.WIDTH) X -= World.WIDTH;
-            if (X < 0) X += World.WIDTH;
-            if (Y >= World.HEIGHT) Y -= World.HEIGHT;
-            if (Y < 0) Y += World.HEIGHT;
+            Position.X += dx;
+            Position.Y += dy;
+            if (Position.X >= World.WIDTH) Position.X -= World.WIDTH;
+            if (Position.X < 0) Position.X += World.WIDTH;
+            if (Position.Y >= World.HEIGHT) Position.Y -= World.HEIGHT;
+            if (Position.Y < 0) Position.Y += World.HEIGHT;
         }
     }
 }
