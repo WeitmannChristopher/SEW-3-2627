@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace _02_Personenverwaltung
@@ -30,7 +30,66 @@ namespace _02_Personenverwaltung
             {
                 a1, a2, a3, a4
             };
-            //Aufgaben bei Teil C anfangen
+
+            Console.WriteLine("Alle Personen:");
+
+            foreach (Person person in personen)
+            {
+                Console.WriteLine(person);
+            }
+
+            int summeAlter = 0;
+
+            foreach (Person person in personen)
+            {
+                summeAlter += person.BerechneAlter();
+            }
+
+            double durchschnitt = (double)summeAlter / personen.Count;
+
+            Console.WriteLine();
+            Console.WriteLine($"Durchschnittsalter: {durchschnitt:F2}");
+
+            foreach (Adresse adresse in adressen)
+            {
+                Console.WriteLine();
+                Console.WriteLine(adresse);
+
+                int anzahl = 0;
+
+                foreach (Person person in personen)
+                {
+                    if (person.Hauptwohnsitz == adresse)
+                    {
+                        Console.WriteLine(person.VollerName());
+                        anzahl++;
+                    }
+                }
+
+                Console.WriteLine($"Anzahl der Personen: {anzahl}");
+            }
+
+            Console.WriteLine();
+            Console.Write("Bitte Bundesland eingeben: ");
+            string bundesland = Console.ReadLine();
+
+            bool gefunden = false;
+
+            foreach (Person person in personen)
+            {
+                if (person.Hauptwohnsitz.Bundesland == bundesland)
+                {
+                    Console.WriteLine(person);
+                    gefunden = true;
+                }
+            }
+
+            if (gefunden == false)
+            {
+                Console.WriteLine("Bundesland nicht gefunden.");
+            }
+
+            Console.ReadKey();
         }
     }
 }
